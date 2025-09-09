@@ -1,26 +1,50 @@
-# 🚗 Car Price Prediction with Machine Learning
+# Task 4 – Sales Prediction using Python
 
-This project builds a machine learning model to predict used car prices based on features such as brand goodwill, year of manufacture, fuel type, transmission, mileage and more.
+This project is part of my **CodeAlpha Internship**.
 
-## 📌 Project Steps
-- **Data Loading & Exploration**: Load car data, inspect missing values and unique features.
-- **Data Preprocessing**: Convert categorical features (Fuel_Type, Selling_type, Transmission) into numeric form, derive `Age` from `Year`.
-- **Feature Engineering**: Drop unnecessary columns, one-hot encode categorical variables.
-- **Model Training**: Train a regression model (Random Forest Regressor) on the processed data.
-- **Evaluation**: Use R² Score and RMSE to evaluate model performance.
-- **Prediction**: Predict selling price of a new car given its attributes.
-- **Visualization**: Scatter plot of actual vs. predicted prices to check model accuracy.
+We predict future sales based on advertising spend across different media platforms (TV, Radio, Newspaper).  
+The goal is to forecast sales and analyze how changes in advertising budgets impact outcomes.
 
-## 🛠️ Tech Stack
-- Python 3.x
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
+---
 
-## 🚀 Usage
-1. Clone the repository.
-2. Install dependencies:
+## 📊 Project Overview
+- Predict **Sales** from advertising spend features:
+  - TV advertising spend
+  - Radio advertising spend
+  - Newspaper advertising spend
+- Prepare data: cleaning, transformation, and feature selection.
+- Use a **regression model** (Linear Regression) to forecast sales.
+- Evaluate model performance using metrics like R² Score and RMSE.
+- Analyze the impact of each advertising channel on sales.
 
+---
+
+## 🛠 Libraries Used
+- `pandas` – for data loading and preprocessing
+- `scikit-learn` – for model building and evaluation
+- `matplotlib` – for visualizations
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
    ```bash
-   pip install -r requirements.txt
+   git clone <your-repo-link>
+   cd <your-repo-folder>
+Install required packages:
+
+bash
+Copy code
+pip install pandas scikit-learn matplotlib jupyter
+Launch Jupyter Notebook:
+
+bash
+Copy code
+jupyter notebook
+Open the notebook:
+
+bash
+Copy code
+Task4_SalesPrediction.ipynb
+Run all cells to train the model and view predictions.
